@@ -45,7 +45,7 @@ export interface NodeInterface {
     deriveHardened(index: number): NodeInterface;
     derivePath(path: string): NodeInterface;
     sign(hash: Buffer): Buffer;
-    verify(hash: Buffer, signature: Buffer): boolean;
+    verify(hash: Buffer, signature: Buffer): Buffer;
 
     // Public getter addons
     getD(): Buffer | undefined;
